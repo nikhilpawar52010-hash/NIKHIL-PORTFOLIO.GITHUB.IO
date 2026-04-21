@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- ========== NAVIGATION BAR ========== -->
   <header class="header">
     <div class="container nav-container">
