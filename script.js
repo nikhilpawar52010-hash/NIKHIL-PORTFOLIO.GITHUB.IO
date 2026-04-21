@@ -6,7 +6,6 @@
 
 // Wait for DOM to fully load
 document.addEventListener('DOMContentLoaded', function() {
-  
   // ======================= 1. MOBILE MENU TOGGLE =======================
   const mobileBtn = document.getElementById('mobileMenuBtn');
   const navbar = document.getElementById('navbar');
