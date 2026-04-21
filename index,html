@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Alex Johnson | Student Portfolio</title>
+  <!-- Google Fonts + Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Link to external CSS (will be created in separate file) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">📘 StudentPort</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Dark mode toggle button inside nav -->
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="Dark/Light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HOME SECTION ========== -->
+    <section id="home" class="section home-section">
+      <div class="container home-container">
+        <div class="profile-img-wrapper">
+          <!-- Placeholder profile photo (replace later) -->
+          <img src="https://placehold.co/400x400/2c3e50/ffffff?text=Profile+Photo" alt="Student Profile" class="profile-photo" id="profileImg">
+        </div>
+        <div class="home-content">
+          <h1 class="name">Alex Johnson</h1>
+          <p class="typing-text" id="typingElement">Computer Science Student | AI Enthusiast</p>
+          <p class="short-bio">Passionate about building intelligent solutions, designing user-centric apps, and constantly learning emerging technologies. Ready to bring innovative ideas to life.</p>
+          <a href="#projects" class="btn btn-primary" id="viewPortfolioBtn">✨ View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ME SECTION ========== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Education 🎓</h3>
+            <p><strong>B.Tech in Computer Science</strong> – ABC University (2023–2027) <br> CGPA: 9.2/10</p>
+            <h3>Interests 💡</h3>
+            <p>Artificial Intelligence, Web Development, Open Source, UI/UX Design, and Competitive Coding.</p>
+            <h3>Career Goals 🚀</h3>
+            <p>Become a full-stack AI engineer, contribute to impactful tech solutions, and eventually lead innovative projects.</p>
+          </div>
+          <div class="skills-box">
+            <h3>Strengths & Skills</h3>
+            <div class="skill-item">
+              <span>Python / JavaScript</span>
+              <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>React Basics / HTML/CSS</span>
+              <div class="progress-bar"><div class="progress" style="width: 82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Machine Learning (Scikit-learn)</span>
+              <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Problem Solving</span>
+              <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS SECTION ========== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <h2 class="section-title">🏆 Achievements & Awards</h2>
+        <div class="cards-grid">
+          <div class="achievement-card">
+            <img src="https://placehold.co/400x250/3498db/ffffff?text=Hackathon+Winner" alt="Hackathon certificate">
+            <h3>National Hackathon Winner</h3>
+            <p>Secured 1st place in AI for Social Good hackathon, built an eco-friendly waste classifier.</p>
+          </div>
+          <div class="achievement-card">
+            <img src="https://placehold.co/400x250/e67e22/ffffff?text=Google+Cloud+Ready" alt="Google Cloud Certificate">
+            <h3>Google Cloud Ready Facilitator</h3>
+            <p>Completed Generative AI track and recognized as top 5% facilitator across India.</p>
+          </div>
+          <div class="achievement-card">
+            <img src="https://placehold.co/400x250/2ecc71/ffffff?text=Code+Chef+Star" alt="CodeChef">
+            <h3>CodeChef 3⭐ Rating</h3>
+            <p>Consistent performer in competitive programming, top 500 in college circuit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">💻 Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- AI4A Project -->
+          <div class="project-card">
+            <img src="https://placehold.co/500x300/1e2a3a/ffffff?text=AI4A+Project" alt="AI4A screenshot">
+            <h3>AI4A Project</h3>
+            <p>AI for Agriculture: Smart crop disease detection using CNN model, deployed as web app with Flask.</p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+          <!-- Design Thinking Project -->
+          <div class="project-card">
+            <img src="https://placehold.co/500x300/34495e/ffffff?text=Design+Thinking" alt="Design Thinking">
+            <h3>Design Thinking Project</h3>
+            <p>User-centric mobile app prototype for mental wellness, designed with Figma and usability testing.</p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Prototype</a>
+            </div>
+          </div>
+          <!-- ACE Project -->
+          <div class="project-card">
+            <img src="https://placehold.co/500x300/2c3e50/ffffff?text=ACE+Project" alt="ACE Project">
+            <h3>ACE Project</h3>
+            <p>Adaptive Collaborative E‑learning platform with real-time chat and AI recommendation engine.</p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS SECTION ========== -->
+    <section id="certifications" class="section certs-section">
+      <div class="container">
+        <h2 class="section-title">📜 Certifications</h2>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <img src="https://placehold.co/300x200/0a66c2/white?text=Coursera+AI" alt="Coursera">
+            <h3>Deep Learning Specialization</h3>
+            <p>Coursera – Andrew Ng</p>
+          </div>
+          <div class="cert-card">
+            <img src="https://placehold.co/300x200/00a86b/white?text=NetAcad" alt="Netacad">
+            <h3>CCNA: Introduction to Networks</h3>
+            <p>Cisco Netacad</p>
+          </div>
+          <div class="cert-card">
+            <img src="https://placehold.co/300x200/ff6b4a/white?text=Yuva+AI" alt="Yuva AI">
+            <h3>Yuva AI Ambassador</h3>
+            <p>Generative AI & Prompt Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION with LIGHTBOX ========== -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2 class="section-title">📸 Gallery</h2>
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- images will be populated via JS or static, but for dynamic lightbox we'll generate sample images -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+      <span class="close-lightbox">&times;</span>
+      <img class="lightbox-img" id="lightboxImg" alt="Enlarged view">
+    </div>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">📬 Contact Me</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> alex.johnson@university.edu</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (555) 678-1234</p>
+            <p><i class="fab fa-linkedin"></i> linkedin.com/in/alexjohnson</p>
+            <p><i class="fab fa-github"></i> github.com/alex-codes</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-dev"></i></a>
+            </div>
+          </div>
+          <!-- Optional contact form -->
+          <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="formFeedback" class="form-feedback"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Alex Johnson – Student Portfolio. All placeholder assets are replaceable.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
